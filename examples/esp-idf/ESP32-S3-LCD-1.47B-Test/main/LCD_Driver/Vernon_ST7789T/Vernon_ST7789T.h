@@ -9,6 +9,11 @@
 #include "esp_err.h"
 #include "esp_lcd_types.h"
 
+#ifndef LCD_RGB_ENDIAN_RGB
+#define LCD_RGB_ENDIAN_RGB LCD_RGB_ELEMENT_ORDER_RGB
+#define LCD_RGB_ENDIAN_BGR LCD_RGB_ELEMENT_ORDER_BGR
+#endif
+
 #ifdef __cplusplus
 extern "C" {
 #endif
@@ -19,8 +24,8 @@ extern "C" {
 typedef struct {
     int reset_gpio_num; /*!< GPIO used to reset the LCD panel, set to -1 if it's not used */
     union {
-        lcd_color_rgb_endian_t color_space; /*!< @deprecated Set RGB color space, please use rgb_endian instead */
-        lcd_color_rgb_endian_t rgb_endian;  /*!< Set RGB data endian: RGB or BGR */
+        lcd_rgb_element_order_t color_space; /*!< @deprecated Set RGB color space, please use rgb_endian instead */
+        lcd_rgb_element_order_t rgb_endian;  /*!< Set RGB data endian: RGB or BGR */
     };
     unsigned int bits_per_pixel;       /*!< Color depth, in bpp */
     struct {
