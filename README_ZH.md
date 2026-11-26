@@ -69,6 +69,7 @@ ESP32-S3-LCD-1.47B 集成 ESP32-S3、1.47 英寸 ST7789 LCD、MicroSD 卡槽、Q
 
 ## 📚 资料
 
+- [原理图（V1.2 PDF）](hardware/schematic/ESP32-S3-LCD-1.47B-Schematic-V1.2.pdf)
 - [产品页](https://www.waveshare.com/ESP32-S3-LCD-1.47B.htm)
 - [Wiki](https://docs.waveshare.net/ESP32-S3-LCD-1.47B/)
 
