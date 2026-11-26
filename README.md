@@ -69,6 +69,7 @@ Libraries used by the sketches are bundled in [`examples/arduino/libraries`](exa
 
 ## 📚 Resources
 
+- [Schematic (V1.2 PDF)](hardware/schematic/ESP32-S3-LCD-1.47B-Schematic-V1.2.pdf)
 - [Product page](https://www.waveshare.com/ESP32-S3-LCD-1.47B.htm)
 - [Wiki](https://docs.waveshare.com/ESP32-S3-LCD-1.47B)
 
